@@ -450,16 +450,11 @@ manual_review[improved_final_columns].to_excel( "Manual review.xlsx",  sheet_nam
 
 print("\nNumber of selected matches", len(best_candidates_improved))
 
-print(
-    "\nNumber of matches for manual review",
-    best_candidates_improved["needs_manual_review"].sum()
-)
+print( "\nNumber of matches for manual review",  best_candidates_improved["needs_manual_review"].sum())
 
 print("\nImproved score distribution")
 
-print(
-    best_candidates_improved["improved_match_score"]
+print(  best_candidates_improved["improved_match_score"]
     .value_counts()
-    .sort_index()
-)
+    .sort_index())
 
