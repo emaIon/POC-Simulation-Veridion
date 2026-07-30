@@ -26,9 +26,6 @@ columns_to_show=[  "input_row_key",
     "website_url"]
 print(first_company[columns_to_show])
 
-#The dataset contains 2,951 candidate rows corresponding to 592 unique client input records. Most client records have five 
-#Veridion candidate matches. Each candidate row includes the original client information and the attributes of one possible Veridion entity.
-
 missing_values=df.isnull().sum()
 print("Missing values\n",missing_values)
 
